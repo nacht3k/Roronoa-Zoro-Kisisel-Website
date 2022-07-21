@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(resimler/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.zorologo{
+    width: 240px;
+    cursor: pointer;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #6fd22e;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase; /* Yazıları büyük yaptık isterseniz silebilirsiniz. */
+    transition: .5s;
+}
+
+.nav ul li a:hover{
+    color: #fff;
+    background: #6fd22e;
+    box-shadow: 0 0 5px #6fd22e,
+                0 0 15px #6fd22e,
+                0 0 45px #6fd22e,
+                0 0 95px #6fd22e;
+}
+
+.icerik{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.icerik h1{
+    font-size: 75px;
+    margin-top: 60px;
+}
+
+.icerik p{
+    margin: 30px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.butke a{
+    border-radius: 15px;
+    text-decoration: none;
+    border-width: 2px;
+    padding: 12px 36px;
+    margin: 10px;
+    background: linear-gradient(80deg,#6fd22e,#45ad00);
+    color: #fff;
+    display: inline-block;
+}
+
+.butke a:hover{
+    background: #6fd22e;
+    color: #fff;
+    box-shadow: 0 0 5px #6fd22e,
+                0 0 25px #6fd22e,
+                0 0 50px #6fd22e,
+                0 0 200px #6fd22e;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
